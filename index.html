@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contatos</title>
+  </head>
+  <body>
+    <h1>Agenda EBAC</h1>
+
+    <form id="form-agenda">
+      <label for="nome-contato">Nome</label>
+      <input id="nome-contato" required type="name" />
+      <label for="telefone-contato">Telefone</label>
+      <input id="telefone-contato" required type="number" />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <table id="agenda">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>teste</td>
+          <td>teste</td>
+          <td class="td-acoes">
+            <span class="btn-excluir" id="excluir">Excluir</span>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>&copy Todos os direitos reservados 2023</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="/contato.js"></script>
+    <script src="/excluir.js"></script>
+  </body>
+</html>
